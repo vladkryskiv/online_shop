@@ -1,0 +1,165 @@
+/* Product Card Styling */
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out; /* Smooth scale transition */
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 250px; 
+    object-fit: contain; 
+    padding: 15px;
+    display: block;
+    margin: 0 auto;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    padding: 10px;
+}
+
+.product-title {
+    font-size: 3rem; /* Increased size */
+    font-weight: bold;
+    background: linear-gradient(to right, #007bff, #6f42c1); /* Gradient text */
+    -webkit-background-clip: text; /* Clips the background to the text */
+    -webkit-text-fill-color: transparent; /* Makes the gradient visible */
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px; /* Adds spacing between letters for a modern look */
+}
+
+/* Add a line under the title */
+.product-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 60px;
+    height: 4px;
+    background-color: #007bff; /* Matches the gradient */
+    border-radius: 2px;
+    transition: width 0.3s ease-in-out;
+}
+
+/* Hover effect for the line under the title */
+.product-title:hover::after {
+    width: 100px; /* Expand the underline on hover */
+}
+
+/* Optional subtle animation on the title */
+.product-title {
+    animation: fadeInEffect 0.8s ease-in-out; /* Same fade-in effect as before */
+}
+
+/* Animations */
+@keyframes fadeInEffect {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.product-description {
+    color: #6c757d;
+}
+
+.product-link h5 {
+    color: #343a40;
+    text-align: center;
+}
+
+.product-link h5:hover {
+    color: #ff7a59;
+    text-decoration: none;
+}
+
+.btn-block {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.product-link {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.product-link h5:hover {
+    color: #ff7a59; 
+    text-decoration: none; 
+}
+
+/* Search Bar Styling */
+.search-bar {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 12px 40px 12px 20px; /* Adjusted padding for the icon */
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.search-bar input:focus {
+    outline: none;
+    border-color: #ff7a59;
+    box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+.search-bar input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+.search-bar-icon {
+    position: absolute;
+    right: 20px;
+    font-size: 20px;
+    color: #888;
+    transition: transform 0.3s ease-in-out;
+}
+
+.search-bar-icon:hover {
+    transform: scale(1.2); /* Slight zoom effect on hover */
+    color: #007bff; /* Change color on hover */
+}
+
+/* Animations */
+@keyframes fadeInEffect {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.search-input {
+    animation: fadeInEffect 0.6s ease-in-out;
+}
+
+.search-bar-icon {
+    animation: fadeInEffect 0.8s ease-in-out;
+}

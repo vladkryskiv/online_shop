@@ -1,0 +1,164 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(to right, #667eea, #764ba2);
+    color: white;
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    margin-top: 15px;
+}
+
+.hero-image {
+    border-radius: 15px;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.hero-image:hover {
+    transform: scale(1.05);
+}
+
+.btn {
+    font-size: 1.2rem;
+    padding: 12px 30px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #ff7a59;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #ff6347;
+}
+
+/* Popular Products Section */
+.top-products-section {
+    background-color: #fff;
+    padding: 50px 0;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.top-products-section h1 {
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.img-box {
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+    height: 250px;
+    position: relative;
+}
+
+.img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.img-box:hover img {
+    transform: scale(1.1);
+}
+
+/* Card Body */
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.item-price {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ff7a59;
+}
+
+.star-rating {
+    color: #ffd700;
+}
+
+.fa-star-o {
+    color: #ccc;
+}
+
+.btn-info {
+    background-color: #667eea;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-info:hover {
+    background-color: #5a67d8;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+
+    .product-card {
+        margin-bottom: 20px;
+    }
+}
